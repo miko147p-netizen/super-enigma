@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pastries — Sweet N Savoury Bakery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-mark"><img src="logo.png" alt="Sweet N Savoury Bakery logo"/></div>
+      <div class="brand-name">Sweet N Savoury<small>Bakery · Greater Noida</small></div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="pastries.html">Pastries</a>
+      <a href="cake-bites.html">Cake Bites</a>
+      <a href="specials.html">Specials</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="index.html#contact">Visit</a>
+      <a href="tel:+919599496606" class="call-btn">📞 +91 95994 96606</a>
+    </nav>
+  </div>
+</header>
+
+<div class="search-wrap hidden" id="searchSticky">
+  <div class="container">
+    <div class="search-box">
+      <span class="search-ico">🔍</span>
+      <input id="searchInput" type="search" placeholder="Search cakes, pastries, brownies…" autocomplete="off" />
+    </div>
+    <div id="searchResults" class="search-results"></div>
+  </div>
+</div>
+
+<section style="padding-top:50px">
+  <div class="container" style="text-align:center">
+    <span class="eyebrow">Menu · Section 01</span>
+    <h1>Pastries</h1>
+    <p style="color:var(--muted);max-width:560px;margin:14px auto 0">Hand-finished individual pastries, baked fresh every morning at our Greater Noida counter.</p>
+    <div class="legend">
+      <span><i class="mark veg"></i> Eggless</span>
+      <span><i class="mark egg"></i> Contains egg</span>
+    </div>
+
+    <div class="items">
+      <article class="item">
+        <img src="https://b.zmtcdn.com/data/dish_photos/78e/b7359464f806ee22fd6931f48fa5178e.jpg?fit=around|400:400&crop=400:400;*,*" alt="Blueberry Cheesecake"/>
+        <div class="info"><h3><i class="mark egg"></i> Blueberry Cheesecake</h3><p>Creamy baked cheesecake topped with tangy blueberry compote.</p></div>
+        <div class="price">₹120</div>
+      </article>
+      <article class="item">
+        <img src="https://b.zmtcdn.com/data/dish_photos/ece/016662d51cd80bcb9fd4e58f97e12ece.jpg?fit=around|400:400&crop=400:400;*,*" alt="Biscoff Cheesecake"/>
+        <div class="info"><h3><i class="mark egg"></i> Biscoff Cheesecake</h3><p>Lotus Biscoff base, silky cheesecake, caramel drizzle on top.</p></div>
+        <div class="price">₹140</div>
+      </article>
+      <article class="item">
+        <img src="https://b.zmtcdn.com/data/dish_photos/9f6/5544219fb53ae7b6243647e143b8c9f6.jpeg?fit=around|400:400&crop=400:400;*,*" alt="Pineapple Pastry"/>
+        <div class="info"><h3><i class="mark veg"></i> Pineapple</h3><p>Classic eggless pineapple pastry with soft sponge and fresh cream.</p></div>
+        <div class="price">₹70</div>
+      </article>
+      <article class="item">
+        <img src="https://b.zmtcdn.com/data/dish_photos/2d8/31fc5c357e707d68df0d3abf9cc802d8.jpeg?fit=around|400:400&crop=400:400;*,*" alt="Red Velvet Pastry"/>
+        <div class="info"><h3><i class="mark egg"></i> Red Velvet</h3><p>Moist red velvet with classic cream-cheese frosting.</p></div>
+        <div class="price">₹110</div>
+      </article>
+      <article class="item">
+        <img src="https://b.zmtcdn.com/data/dish_photos/0f8/cba56f8c6ce4d3492b3482943b2300f8.jpeg?fit=around|400:400&crop=400:400;*,*" alt="Belgian Chocolate Pastry"/>
+        <div class="info"><h3><i class="mark egg"></i> Belgian Chocolate</h3><p>Dark Belgian chocolate ganache over moist chocolate sponge.</p></div>
+        <div class="price">₹110</div>
+      </article>
+      <article class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0G30ERzFKP6GadPuf4qhmEEdxQB75o0sngQ&s" alt="Le Petit Antonie"/>
+        <div class="info"><h3><i class="mark veg"></i> Le Petit Antonie</h3><p>Our signature delicate French-style pastry — light, layered and floral.</p></div>
+        <div class="price">₹150</div>
+      </article>
+    </div>
+
+    <p class="note">Prices indicative · For custom variations call <a href="tel:+919599496606" style="color:var(--berry);font-weight:700">+91 95994 96606</a></p>
+    <div style="margin-top:30px"><a href="index.html" class="btn btn-ghost">← Back to home</a></div>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="yr"></span> Sweet N Savoury Bakery · Greater Noida</p>
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>

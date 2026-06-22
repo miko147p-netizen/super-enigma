@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Specials — Sweet N Savoury Bakery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-mark"><img src="logo.png" alt="Sweet N Savoury Bakery logo"/></div>
+      <div class="brand-name">Sweet N Savoury<small>Bakery · Greater Noida</small></div>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="pastries.html">Pastries</a>
+      <a href="cake-bites.html">Cake Bites</a>
+      <a href="specials.html">Specials</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="index.html#contact">Visit</a>
+      <a href="tel:+919599496606" class="call-btn">📞 +91 95994 96606</a>
+    </nav>
+  </div>
+</header>
+
+<div class="search-wrap hidden" id="searchSticky">
+  <div class="container">
+    <div class="search-box">
+      <span class="search-ico">🔍</span>
+      <input id="searchInput" type="search" placeholder="Search cakes, pastries, brownies…" autocomplete="off" />
+    </div>
+    <div id="searchResults" class="search-results"></div>
+  </div>
+</div>
+
+<section style="padding-top:50px">
+  <div class="container" style="text-align:center">
+    <span class="eyebrow">Menu · Section 03</span>
+    <h1>Specials</h1>
+    <p style="color:var(--muted);max-width:560px;margin:14px auto 0">Counter favourites — sweet, savoury, and everything in between.</p>
+    <div class="legend">
+      <span><i class="mark veg"></i> Eggless</span>
+      <span><i class="mark egg"></i> Contains egg</span>
+    </div>
+
+    <div class="items">
+      <article class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR4GoMzJcayotcVt0eU3DSIkwB1Sl2oLgDkA&s" alt="Cup Cake"/>
+        <div class="info"><h3><i class="mark veg"></i> Cup Cake</h3><p>Soft sponge cupcake with swirled buttercream — multiple flavours.</p></div>
+        <div class="price">₹60</div>
+      </article>
+      <article class="item">
+        <img src="https://www.dreamadozen.com/cdn/shop/files/mixedberryjar_5bdfe16d-354b-4b40-b2a7-9cdd626d879b.jpg" alt="Jar Cake"/>
+        <div class="info"><h3><i class="mark egg"></i> Jar Cake</h3><p>Layered jar of cake, cream, fruits and toppings — perfectly portable.</p></div>
+        <div class="price">₹180</div>
+      </article>
+      <article class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9uYA2164dty-nkTec-yj1TF32DE1p9yYQ3w&s" alt="Brownie"/>
+        <div class="info"><h3><i class="mark veg"></i> Brownie</h3><p>Fudgy centre, crackly top — the gooey eggless classic.</p></div>
+        <div class="price">₹90</div>
+      </article>
+      <article class="item">
+        <img src="https://b.zmtcdn.com/data/dish_photos/47d/324ff2830373b76ee1a44a08ccca947d.jpeg?fit=around|400:400&crop=400:400;*,*" alt="Dry Cake"/>
+        <div class="info"><h3><i class="mark veg"></i> Dry Cake</h3><p>Tea-time loaf cake — perfect with chai or coffee.</p></div>
+        <div class="price">₹200</div>
+      </article>
+      <article class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS7p8IOuO1OLqRV1JvcvX4vRuroM-Vb_WSrg&s" alt="Veg Puff"/>
+        <div class="info"><h3><i class="mark veg"></i> Veg Puff</h3><p>Flaky, buttery puff pastry filled with spiced potatoes and peas.</p></div>
+        <div class="price">₹40</div>
+      </article>
+      <article class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxr9y4NCH4gpWFAi_V38qLCao_oxa0GnGm8Q&s" alt="Macarons"/>
+        <div class="info"><h3><i class="mark veg"></i> Macarons</h3><p>Crisp shells, chewy centres, smooth ganache filling — many flavours.</p></div>
+        <div class="price">₹80</div>
+      </article>
+      <article class="item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjoS4ADknRwFrZJwWdrwTZbEDrmEIS1jj7Eg&s" alt="Donuts"/>
+        <div class="info"><h3><i class="mark veg"></i> Donuts</h3><p>Soft, pillowy donuts with a glossy glaze — six flavours daily.</p></div>
+        <div class="price">₹70</div>
+      </article>
+    </div>
+
+    <p class="note">Looking for Baklawa or Naan Khatai? Available fresh at the counter — call ahead to reserve.</p>
+    <div style="margin-top:30px"><a href="index.html" class="btn btn-ghost">← Back to home</a></div>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="yr"></span> Sweet N Savoury Bakery · Greater Noida</p>
+</footer>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+<script src="script.js"></script>
+</body>
+</html>
